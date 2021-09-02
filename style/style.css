@@ -1,0 +1,389 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, rgba(206,118,26,1) 0%, rgba(193,174,131,1) 100%);
+}
+
+
+
+                                                     /* BACKGROUND */
+
+.background {
+    padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../image/padaria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.25;
+}
+
+
+                                            /* CONTEUDO TRADICAO BACKGROUND */
+.tradition {
+    font-family: 'Dancing Script', cursiva;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    line-height: 60px;
+    position: relative;    
+}
+
+                                            /* CONTEUDO TRADICAO - FORMULARIO */
+
+.container {
+    position: relative;
+    float: left;
+    display: flex;
+}
+
+.formContainer {
+    max-width: 250px;
+    background-color: #FFFFFFBB;
+    position: relative;
+    padding: 20px;
+    float: right;
+
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+                                            /* BOTAO DE ENVIO - FORMULARIO */
+input[type="submit"]{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #E19E54;
+    border:1px solid black;
+}
+
+                                        /* INTRODUCAO ALBUM DE FOTOS */
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursiva;
+    font-size: 60px;
+    font-weight: normal;
+    padding: 60px;
+}
+
+
+                                            /*  ALBUM DE FOTOS */
+
+.photoAlbum{
+    overflow: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.pictures {
+    height: 350px;
+    width: 450px;
+    margin: 20px;
+}
+
+.pictures:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .6s;
+    box-shadow:  3px 3px 15px black;
+ }
+
+
+                                        /*  LINK SHOPPING */
+h3 {
+    
+    margin-left: 20px;
+    font-size: 20px;
+    
+}
+
+.shopping {
+    height: auto;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+                                    /*  LINK SHOPPING - IFOOD */
+.ifoodPayment {
+    
+    text-align: center;
+    display: block;
+}
+
+.ifood { 
+    width: 200px;
+    text-align: center;
+}
+
+.payment {
+    text-align: left;
+    margin-left: 150px;
+}
+
+.payment ul{
+    padding-left: 35px;
+    font-size: 20px;   
+    margin-top: 20px;    
+}
+
+.payment li {
+    margin-top: 10px;
+}
+
+
+
+                                            /*  SOCIAL MEDIA */
+
+hr{
+    border:black ;
+    border-top: 2px solid black;
+}                                            
+
+.socialMedia img{
+    display: inline;
+    text-align: center;
+    margin-top: 20px;
+    width: 25px;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    text-align: center;
+    margin: 50px;
+}
+
+.socialMedia ul{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.socialMedia li {
+    display: inline;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+}
+
+                                            /*  UNIDADES */
+
+
+
+.addressUnid {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 50px;
+}
+
+.addressUnid p {
+    font-size: 20px;
+    
+}
+
+.address {
+    display: flex;
+    margin-left: 25px;
+}
+
+.maps {
+
+    margin-top: 25px;
+    width: 300px;
+    height: 250px;
+    border:1px solid black;
+}                                            
+
+                                            /*---------- RODAPÉ - INFO ----------*/
+
+.info {
+    padding: 30px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    font: bold;
+}
+
+
+
+
+
+                                                    /* TABLET SCREEN 1100x800 */
+
+@media screen and (max-width: 1100px) {
+
+                                            /*  ALBUM DE FOTOS */
+.photoAlbum{
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+}
+
+.pictures {
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+}
+
+}
+
+
+
+
+
+                                                    /* TABLET SCREEN 900x800 */
+
+@media screen and (max-width: 900px) {
+
+                                    /* CONTEUDO TRADICAO - FORMULARIO */
+
+.container {
+    justify-content: center;
+    text-align: center;
+    float: none;
+    display: block;
+}
+                                            
+.formContainer {
+    justify-content: center;
+    max-width: none;
+    background-color: #FFFFFFBB;
+    text-align: center;
+    padding: 20px;
+    float: none;
+}
+
+
+                                            /*  ALBUM DE FOTOS */
+.photoAlbum{
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+}
+
+.pictures {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+                                            /*  UNIDADES */
+
+
+.addressUnid {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.maps {
+
+    margin-top: 25px;
+    width: 250px;
+    height: 200px;
+    border:1px solid black;
+}  
+
+}   
+
+
+
+
+
+
+
+
+
+                                                    /* MOBILE SCREEN 400x800 */
+
+@media screen and (max-width: 500px) {
+
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursiva;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 30px;
+}
+
+
+                                    /*  LINK PARA COMPRAR NO IFOOD */
+h3 {
+    
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.shopping {
+    height: auto;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    display: block;
+}
+
+.payment {
+    text-align: left;
+    margin-left: 0px;
+}
+
+.payment ul{
+    padding-left: 35px;
+    font-size: 20px;   
+    margin-top: 20px;    
+}
+
+.payment li {
+    margin-top: 10px;
+}
+
+                                            /*  UNIDADES */
+
+.address {
+    display: block;
+    margin-left: 25px;
+}
+
+.addressUnid {
+    text-align: center;
+}
+
+.addressUnid p {
+    margin-top: 20px;
+}
+
+
+}
